@@ -1,0 +1,3 @@
+[submodule "lib/submodules/australianpostcodes"]
+	path = lib/submodules/australianpostcodes
+	url = git@github.com:matthewproctor/australianpostcodes.git
