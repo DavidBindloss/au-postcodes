@@ -1,11 +1,21 @@
-# `zoning-app-backend`
+# AU Postcodes
 
-> TODO: description
+Simple express app that allows you to search all
+postcodes in Australia.
 
-## Usage
+# End points
 
-```
-const zoningAppBackend = require('zoning-app-backend');
+## /postcodes
 
-// TODO: DEMONSTRATE API
-```
+Returns all postcode data available in json format.
+~16M of data.
+
+## /postcodes/:postcode
+
+Will attempt to return the data for the specified postcode.
+If none is found, it will return a 404.
+
+## /hash
+
+Returns the current md5 hash of the entire postcode object.
+Useful for versioning.
