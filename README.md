@@ -3,19 +3,27 @@
 Simple express app that allows you to search all
 postcodes in Australia.
 
+---
+
 # End points
 
-## /postcodes
+```
+/postcodes?page=:page&limit=:limit
+```
 
-Returns all postcode data available in json format.
-~16M of data.
+Returns paginated results for all of the postcodes.
+Limit is a integer between 20 & 50.
 
-## /postcodes/:postcode
+```
+/postcodes/:postcode
+```
 
 Will attempt to return the data for the specified postcode.
 If none is found, it will return a 404.
 
-## /hash
+```
+/hash
+```
 
 Returns the current md5 hash of the entire postcode object.
 Useful for versioning.
