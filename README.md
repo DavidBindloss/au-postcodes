@@ -8,22 +8,27 @@ postcodes in Australia.
 # End points
 
 ```
-/postcodes?page=:page&limit=:limit
+https://au-postcodes.herokuapp.com/postcodes?page=:page&limit=:limit
 ```
 
 Returns paginated results for all of the postcodes.
 Limit is a integer between 20 & 50.
 
 ```
-/postcodes/:postcode
+https://au-postcodes.herokuapp.com/postcodes/:postcode
 ```
 
 Will attempt to return the data for the specified postcode.
 If none is found, it will return a 404.
 
 ```
-/hash
+https://au-postcodes.herokuapp.com/hash
 ```
 
 Returns the current md5 hash of the entire postcode object.
 Useful for versioning.
+
+
+## Hosting
+
+I've got this server running @ `https://au-postcodes.herokuapp.com/` - you can test all the end points there.
