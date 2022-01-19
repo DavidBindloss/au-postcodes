@@ -5,7 +5,7 @@ postcodes in Australia.
 
 ---
 
-# End points
+## End points
 
 ```
 https://au-postcodes.herokuapp.com/postcodes?page=:page&limit=:limit
@@ -28,7 +28,6 @@ https://au-postcodes.herokuapp.com/hash
 Returns the current md5 hash of the entire postcode object.
 Useful for versioning.
 
-
 ## Hosting
 
-I've got this server running @ `https://au-postcodes.herokuapp.com/` - you can test all the end points there.
+I've got this server running at [https://au-postcodes.herokuapp.com/](https://au-postcodes.herokuapp.com/) - you can test all the end points there.
